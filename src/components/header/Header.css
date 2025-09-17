@@ -1,0 +1,388 @@
+/* ====== Global Dark Mode ====== */
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode a {
+  color: #f5f5f5;
+}
+
+/* ====== Top Bar ====== */
+.top-bar {
+  background: linear-gradient(90deg, #14bd44, #60abd6);
+  color: #fff;
+  padding: 6px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.top-bar .icon {
+  margin: 0 6px;
+}
+
+.top-bar .contact-link {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.top-bar .contact-link:hover {
+  text-decoration: underline;
+}
+
+.top-bar .tagline {
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* ====== Main Header ====== */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 25px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+body.dark-mode .main-header {
+  background: #1a1a1a;
+  border-bottom-color: #333;
+}
+
+/* ====== Logo Area ====== */
+.logo-area {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 3px solid #e60000;
+  border-radius: 10PX;
+}
+
+.logo-icon {
+  height: 65px;
+  margin-right: 14px;
+  padding: 3px;
+}
+
+.brand-box {
+  border: 2px solid #333;     /* square border */
+  border-radius: 8px;         /* optional rounded corners */
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;     /* stack brand and tagline vertically */
+  align-items: center;
+  cursor: pointer;
+}
+
+.brand-text .brand {
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: bold;
+  color: #111;
+}
+
+.tagline-area {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.brand-tagline {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.highlight {
+  color: #e63946; /* theme highlight color */
+  font-weight: bold;
+}
+body.dark-mode .brand {
+  color: #ff4d4d;
+  border-color: #ff4d4d;
+}
+
+/* ====== Search Box (Desktop) ====== */
+.search-box {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.search-box input {
+  border: none;
+  padding: 10px 14px;
+  outline: none;
+  width: 200px;
+}
+
+.search-box button {
+  background: linear-gradient(45deg, #ff6600, #ff3300);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+  background: linear-gradient(45deg, #e65c00, #cc2900);
+}
+
+/* ====== Header Actions ====== */
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  margin-left: 12px;
+  color: #333;
+  transition: transform 0.2s ease;
+  display: none; /* hidden on desktop */
+}
+
+.menu-toggle:hover {
+  transform: rotate(90deg);
+}
+
+body.dark-mode .menu-toggle {
+  color: #fff;
+}
+
+/* ====== Navigation ====== */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: #ff6600;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+body.dark-mode .nav-links a {
+  color: #f1f1f1;
+}
+
+.quote-btn, .login-link {
+  background: linear-gradient(45deg, #ff6600, #ff3300);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 25px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.quote-btn:hover, .login-link:hover {
+  background: linear-gradient(45deg, #e65c00, #cc2900);
+  transform: translateY(-2px);
+}
+
+/* ====== Mobile Search Button (icon only) ====== */
+.mobile-search-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  display: none; /* hidden on desktop */
+  color: #333;
+  margin-left: 10px;
+}
+
+body.dark-mode .mobile-search-btn {
+  color: #fff;
+}
+
+/* ====== Mobile Search Input ====== */
+.mobile-search {
+  display: none;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 10px auto;
+  max-width: 90%;
+  animation: slideDown 0.3s ease;
+}
+
+.mobile-search.open {
+  display: flex;
+}
+
+.mobile-search input {
+  flex: 1;
+  border: none;
+  padding: 8px 12px;
+  outline: none;
+}
+
+.mobile-search button {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.mobile-search button:hover {
+  background: #e65c00;
+}
+
+/* ====== Mobile Menu ====== */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: row; /* logo left, actions right */
+    justify-content: space-between;
+    padding: 12px 15px;
+  }
+
+  .logo-area {
+    justify-content: flex-start;
+  }
+
+  .logo-icon {
+    height: 55px;
+    margin-right: 10px;
+  }
+
+  .brand {
+    font-size: 42px;
+    padding: 3px 10px;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: #f9f9f9;
+    padding: 20px;
+    display: none;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+    animation: slideDown 0.3s ease;
+  }
+
+  @keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  body.dark-mode .nav-links {
+    background: #1e1e1e;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .search-box {
+    display: none; /* hide desktop search */
+  }
+
+  .menu-toggle {
+    display: inline-block; /* show on mobile */
+  }
+
+  .mobile-search-btn {
+    display: inline-block; /* show on mobile */
+  }
+}
+
+/* ====== Scroll to Top Button ====== */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(45deg, #ff6600, #ff3300);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.scroll-top-btn:hover {
+  background: linear-gradient(45deg, #e65c00, #cc2900);
+  transform: scale(1.1);
+}
+
+/* ====== Floating Dark Mode Button ====== */
+.floating-dark-mode {
+  position: fixed;
+  top: 20px;
+  right: -60px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 2000;
+  transition: right 0.4s ease, transform 0.2s ease, background 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+body.dark-mode .floating-dark-mode {
+  background: #f1f1f1;
+  color: #333;
+}
+
+.floating-dark-mode:hover {
+  background: #555;
+  transform: scale(1.1);
+}
+
+/* Show button when scrolling */
+.show-dark-mode {
+  right: 20px;
+}
+
+/* ====== Sticky Header ====== */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}

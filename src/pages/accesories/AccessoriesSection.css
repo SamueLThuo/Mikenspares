@@ -1,0 +1,109 @@
+/* AccessoriesSection.css */
+
+/* Page Container */
+.about-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Headings */
+.about-page h1 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.about-page h2 {
+  font-size: 1.5rem;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #1a237e;
+  border-left: 4px solid #1a237e;
+  padding-left: 8px;
+}
+
+/* Paragraphs */
+.about-page p {
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* List */
+.about-page ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 20px;
+}
+
+.about-page ul li {
+  background: #f8f9fa;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* Call to Action Buttons */
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.whatsapp-btn {
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1eb854;
+  transform: translateY(-2px);
+}
+
+.shop-now-btn {
+  background-color: #ff9800;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.shop-now-btn:hover {
+  background-color: #e68900;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 15px;
+  }
+
+  .about-page h1 {
+    font-size: 1.6rem;
+  }
+
+  .about-page h2 {
+    font-size: 1.3rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+}

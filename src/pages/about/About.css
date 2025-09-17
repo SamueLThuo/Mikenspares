@@ -1,0 +1,68 @@
+.about-page {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.7;
+}
+
+.about-hero {
+  background-color: #003d91;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-hero p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.about-section {
+  margin-bottom: 2rem;
+}
+
+.about-section h2 {
+  color: #003d91;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-section ul li {
+  background: #f4f4f4;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.contact-cta {
+  text-align: center;
+}
+
+.whatsapp-cta {
+  background-color: #25d366;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-cta:hover {
+  background-color: #1ebe5d;
+}

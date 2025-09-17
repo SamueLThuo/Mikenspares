@@ -1,0 +1,44 @@
+/* Wrapper */
+.product-form-wrapper {
+  padding: 16px;
+}
+
+/* Action buttons inside table */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Ant Design table responsive fix */
+.ant-table-wrapper {
+  overflow-x: auto;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  /* Make buttons smaller */
+  .ant-btn {
+    font-size: 12px;
+    padding: 0 8px;
+    height: 28px;
+  }
+
+  /* Modal full width on mobile */
+  .ant-modal {
+    width: 95% !important;
+    top: 20px !important;
+  }
+
+  /* Form fields smaller font */
+  .ant-form-item-label > label {
+    font-size: 13px;
+  }
+
+  /* Form input size */
+  .ant-input,
+  .ant-input-number,
+  .ant-select-selector {
+    font-size: 13px !important;
+  }
+}

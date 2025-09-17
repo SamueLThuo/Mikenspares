@@ -1,0 +1,54 @@
+.carousel-wrapper {
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.carousel-wrapper h2 {
+  color: #003d91;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.testimonial-swiper {
+  max-width: 700px;
+  margin: auto;
+}
+
+.testimonial-slide {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease-in-out;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.quote {
+  font-style: italic;
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.author strong {
+  color: #003d91;
+  display: block;
+  font-size: 1rem;
+}
+
+.author span {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

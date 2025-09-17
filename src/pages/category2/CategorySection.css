@@ -1,0 +1,32 @@
+.category-sections {
+  padding: 40px;
+}
+
+.category-block {
+  margin-bottom: 60px;
+}
+
+.category-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}

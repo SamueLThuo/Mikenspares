@@ -1,0 +1,148 @@
+.all-products-page {
+  width: 100%;
+}
+
+/* Intro text */
+.page-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto 40px auto;
+  padding: 0 15px;
+}
+
+.page-intro h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.page-intro p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Full-width section backgrounds */
+.category-section {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.category-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Category Header */
+.category-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.category-icon {
+  font-size: 1.4rem;
+  margin-right: 8px;
+}
+
+.category-header h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+/* Product Card */
+.product-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.brand {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  margin-right: 8px;
+  color: #888;
+}
+
+.discounted-price {
+  font-weight: bold;
+  color: inherit;
+}
+
+/* Discount Badge - Always red */
+.discount-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: white;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #e53935;
+}
+
+/* Buttons */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.whatsapp-btn {
+  flex: 1;
+  text-align: center;
+  padding: 8px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  background-color: #25d366;
+  color: white;
+}
+
+.view-btn {
+  flex: 1;
+  text-align: center;
+  padding: 8px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  background: transparent;
+  border: 1px solid #fb8c00;
+  color: #fb8c00;
+}
+
+.view-btn:hover {
+  background: rgba(251, 140, 0, 0.1);
+}

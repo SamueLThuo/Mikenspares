@@ -1,0 +1,98 @@
+.deals-section {
+  padding: 40px 20px;
+  background: #fff9f5;
+  text-align: center;
+}
+
+.deals-section h2 {
+  font-size: 2rem;
+  color: #d63b00;
+  margin-bottom: 2rem;
+}
+
+.deal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.deal-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+  transition: 0.3s;
+}
+
+.deal-card:hover {
+  transform: translateY(-4px);
+}
+
+.deal-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.deal-card h3 {
+  font-size: 1rem;
+  color: #222;
+  margin: 0.5rem 0;
+}
+
+.deal-card .category {
+  color: #888;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.deal-card .price {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.original {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 0.5rem;
+}
+
+.discounted {
+  color: #e53935;
+}
+
+.deal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.whatsapp-btn,
+.view-btn {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+}
+
+.view-btn {
+  background-color: #1976d2;
+}
+
+.whatsapp-btn:hover {
+  background-color: #20b75e;
+}
+
+.view-btn:hover {
+  background-color: #0d58a6;
+}
